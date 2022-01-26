@@ -1,0 +1,87 @@
+//Bootstrap var core customization
+$primary: #161616;
+$secondary: #b1b1b1;
+$border-radius: 0px;
+$border-radius: 0px;
+$border-radius-sm:  0px;
+$border-radius-lg:  0px;
+$border-radius-pill: 0px;
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .logo{
+    font-family: 'Oswald', sans-serif;
+  }
+
+
+//Infinite slider
+.slider-container{
+    overflow: hidden;
+}
+
+.slider-container object{
+    white-space: nowrap;
+    animation: anim 60s linear infinite;
+}
+
+    @keyframes anim {
+        0%{transform: translateX(0);}
+        100%{transform: translateX(-100%);}
+    }
+
+//grid customization
+
+.grid-work{
+    width: 100%;
+    background-color: #c2c2c2;
+    position: relative;
+}
+
+.info-work{
+    padding: 30% 10%;
+    opacity: 0;
+    transition: ease-in-out 0.250s;
+}
+
+.who-i-am{
+    padding:41% 10%;
+}
+
+.info-work:hover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    opacity: 1;
+}
+
+.info-work:hover .work-text{
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+
+.grid-work ul{
+    list-style: none;
+}
+
+.grid-work li{
+    display: inline;
+    padding: 0px 10px;
+    color: #ffff;
+}
+
+.grid-work img{
+    width: 100%;
+    position: relative;
+}
+
+
+.mail-footer{
+    color: #161616;
+    font-size: 3.125rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+@import "node_modules/bootstrap/scss/bootstrap";
