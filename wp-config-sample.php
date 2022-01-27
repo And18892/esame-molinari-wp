@@ -1,4 +1,13 @@
 <?php
+
+  if (file_exists(dirname(__FILE__) . '/wp-config-local.php')):
+    require_once(dirname(__FILE__) . '/wp-config-local.php');
+    return;
+  endif;
+	
+  define( 'WP_HOME', 'http://andreacecchi.pro' );
+  define( 'WP_SITEURL', 'http://andreacecchi.pro' );
+
 /**
  * Il file base di configurazione di WordPress.
  *

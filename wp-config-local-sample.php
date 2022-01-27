@@ -1,12 +1,7 @@
 <?php
 
-  if (file_exists(dirname(__FILE__) . '/wp-config-local.php')):
-    require_once(dirname(__FILE__) . '/wp-config-local.php');
-    return;
-  endif;
-	
-  define( 'WP_HOME', 'http://andreacecchi.pro' );
-  define( 'WP_SITEURL', 'http://andreacecchi.pro' );
+define( 'WP_HOME', 'http://localhost:8888/projects/laba/biennio2_202021/molinari_antonio/esame-molinari-wp/' );
+define( 'WP_SITEURL', 'http://localhost:8888/projects/laba/biennio2_202021/molinari_antonio/esame-molinari-wp/' );
 
 
 /**
@@ -30,7 +25,7 @@
 
 // ** Impostazioni database - È possibile ottenere queste informazioni dal proprio fornitore di hosting ** //
 /** Il nome del database di WordPress */
-define( 'DB_NAME', 'esame-molinari' );
+define( 'DB_NAME', 'laba_andreacecchi_up' );
 
 /** Nome utente del database */
 define( 'DB_USER', 'root' );
