@@ -13,12 +13,6 @@
     <link rel="apple-touch-icon" href="favicon-A.ico">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
-
-
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +21,8 @@
 
 
     <meta name="theme-color" content="#fafafa">
+
+    <?php wp_head(); ?>
 </head>
 
 <body class="d-flex flex-column h-100">
